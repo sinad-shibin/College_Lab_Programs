@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n "Enter your name : "
+read name
+
+echo $name | rev
+
+echo -n "the length of the string is : "
+expr length "$name"
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Operators : "
+echo "Addition : + "
+echo "Subtraction : - "
+echo "Multiplication : * "
+echo "Division : '\'"
+echo "Modulus : % "
+echo "Exponent : ^"
+echo "Paranthesis : () "
+
+echo "Enter the expression : "
+read exp
+
+echo "Answer : `awk "BEGIN{print $exp}"`"
+
+

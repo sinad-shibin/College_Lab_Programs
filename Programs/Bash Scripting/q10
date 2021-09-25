@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -n "Enter the character : "
+read ch
+
+echo -n "Number of the files starting with the character $ch :"
+ls -l $ch* | wc -l

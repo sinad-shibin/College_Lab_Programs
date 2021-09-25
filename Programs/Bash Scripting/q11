@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo -n "Enter the source file : "
+read sfile
+
+echo -n "Enter the target file : "
+read tfile
+
+if [ -e $sfile ]
+then
+    head -0 $sfile | tr 'a,e,i,o,u' 'A-Z' >> $tfile
+    echo "succesffully copied with the vowels capitalised!"
+else
+    echo "Source file doesn't exist!"
+fi

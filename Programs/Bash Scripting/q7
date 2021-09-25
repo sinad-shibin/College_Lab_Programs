@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Enter the fle name : "
+read filename
+
+echo "Enter the string : "
+read word
+
+ grep -q $word $filename && echo "String is present" || echo "String is not present" 

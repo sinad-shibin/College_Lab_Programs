@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "School File : "
+cat school.dat
+echo "Sorted Content :"
+sort -k 3nr school.dat

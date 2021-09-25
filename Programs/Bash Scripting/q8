@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo -n "Enter the source File name :"
+read file1
+
+echo -n "Enter the target File name :"
+read file2
+
+if [ -e $file1 ]
+then
+    if [ -e $file2 ]
+    then
+        cat $file1 >> $file2
+        echo "Content is appended!"
+
+    else
+        cp $file1 $file2
+        echo "Content is copied to the new file!"
+    fi
+else    
+    echo "Source file doesn't exist!"
+fi
+

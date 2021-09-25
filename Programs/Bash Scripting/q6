@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# == 2 ]
+then
+    [ -e $1 ] && mv $1 $2 && echo "File successfully renamed" || echo "file doesnt exist" ;
+    echo "Number of arguments passed : $#"
+
+else
+    echo "Please provide two files"
+fi

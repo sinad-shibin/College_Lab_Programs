@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# creating a menu with the following options
+
+echo "SELECT YOUR OPTION";
+echo "1. program"
+echo "2. exit"
+echo -n "Enter your menu choice [1-2]: "
+
+while :
+do
+    # reading choice
+    read choice
+
+    case $choice in
+
+        1)
+        echo "Enter the day number :"
+        read daynum
+        if [ $daynum == 1 ]
+        then
+            echo "Monday"
+
+        elif [ $daynum == 2 ]
+        then
+            echo "Tuesday"
+
+        elif [ $daynum == 3 ]
+        then
+            echo "Wednesday"
+
+        elif [ $daynum == 4 ]
+        then
+            echo "Thursday"
+        
+        elif [ $daynum == 5 ]
+        then
+            echo "Friday"
+
+        elif [ $daynum == 6 ]
+        then
+            echo "Saturday"
+
+        elif [ $daynum == 7 ]
+        then
+            echo "Sunday"
+        else
+            echo "Invalid entry!"
+        fi
+
+        2)
+        #echo "Exiting..."
+        break;;
+        #exit
+
+        *)
+        echo "invalid option";;
+
+    esac
+    echo -n "Enter your menu choice [1-2]: "
+done
